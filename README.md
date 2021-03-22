@@ -1,6 +1,6 @@
-# Website for Meal Assistance
+# Website for AR Meal Assistance
 
-This is the repository that contains source code for the [Meal Assistance website](https://sbpark422.github.io/Meal_Assistance/).  
+This is the repository that contains source code for the [AR Meal Assistance website](https://sbpark422.github.io/Meal_AR/).  
 The website template was borrowed from [nerfies](https://github.com/nerfies/nerfies.github.io).
 
 # Website License
