@@ -183,16 +183,13 @@
         <div class="columns is-centered">
           <div class="content has-text-justified">
             <p style="color:gray;">
-              The system basically follows the process we have done in the <a href="https://www.soobinpark.info/Meal_Assistance/">VR environment</a>, but there is a difference in that it is based on augmented reality.
+              The system basically follows the process we have done in the <a href="https://www.soobinpark.info/Meal_Assistance/">VR environment</a>, but there is a difference in that it is based on augmented reality and real-world settings.
             </p>
             <p>
-              I built a mealtime assistance system for people with visual impairments that involved AR-based hand-to-food guidance through auditory cues. With real-time 3D hand tracking and point-cloud tracking of the environment, my mobile application was designed to assist visually impaired persons’ ability to navigate 3D spaces and locate food---thus helping resolve an important last-few-meters wayfinding problem.
+              A mealtime assistance system for people with visual impairments involved AR-based hand-to-food guidance through auditory cues. With real-time 3D hand tracking and point-cloud tracking of the environment, my mobile application was designed to assist visually impaired persons’ ability to navigate 3D spaces and locate food---thus helping resolve an important last-few-meters wayfinding problem.
               Real-time speech recognition enabled natural communication between the app and its users, and allowed users to identify and retrieve the food they wanted.
             <p>
-              Our design probe system was implemented in the environment of Unity 3D engine and built onto our iOS devices through Xcode. To get the voice command from the users and provide the output to the users, we used <a href="https://www.ibm.com/watson">IBM’s Watson</a> to receive users’ voice input through the mobile phone and convert it to text.
-              We also used a text-to-speech module to provide requested information verbally to the users.
-              The system supports two types of assistance: (1) providing dish-related information on a table, and (2) guiding users’ hand towards a particular dish.
-            </p>
+              The system was implemented in the environment of Unity 3D engine and built onto our iOS devices through Xcode.
           </div>
         </div>
         <BR>
@@ -251,6 +248,9 @@
         <!--/ Matting. -->
         <div class="columns is-centered">
         <div class="content has-text-justified">
+          <p>
+            The system supports two types of assistance: (1) providing dish-related information on a table, and (2) guiding users’ hand towards a particular dish.
+          </p>
           <p>
             <b>1. Dish-related Information.</b> The system provides the <b>overview</b> information of the dishes on a table when it detects the users’ voice command saying "overview". It informs the total number of dishes followed by the dish arrangement (e.g., "There are in total 6 dishes straightly lined up"), and how dishes are spread about (e.g., "Starting from 10 o’clock to 2 o’clock.").
             Lastly, it notifies the name of each dish one at a time from left to right.
