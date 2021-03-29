@@ -183,13 +183,72 @@
         <div class="columns is-centered">
           <div class="content has-text-justified">
             <p>
-              Our design probe system was implemented in the environment of Unity 3D engine and built onto our iOS devices through Xcode. To get the voice command from the users and provide the output to the users, we used <a href="https://www.ibm.com/watson">IBM’s Watson</a> to receive users’ voice input through the mobile phone and convert it to text. We also used a text-to-speech module to provide requested information verbally to the users.
+              The system basically follows the process we have done in the <a href="https://www.soobinpark.info/Meal_Assistance/">VR environment</a>, but there is a difference in that it is based on augmented reality.
+            </p>
+            <p>
+              I built a mealtime assistance system for people with visual impairments that involved AR-based hand-to-food guidance through auditory cues. With real-time 3D hand tracking and point-cloud tracking of the environment, my mobile application was designed to assist visually impaired persons’ ability to navigate 3D spaces and locate food---thus helping resolve an important last-few-meters wayfinding problem.
+              Real-time speech recognition enabled natural communication between the app and its users, and allowed users to identify and retrieve the food they wanted.
+            <p>
+              Our design probe system was implemented in the environment of Unity 3D engine and built onto our iOS devices through Xcode. To get the voice command from the users and provide the output to the users, we used <a href="https://www.ibm.com/watson">IBM’s Watson</a> to receive users’ voice input through the mobile phone and convert it to text.
+              We also used a text-to-speech module to provide requested information verbally to the users.
               The system supports two types of assistance: (1) providing dish-related information on a table, and (2) guiding users’ hand towards a particular dish.
             </p>
           </div>
         </div>
-<BR>
-        <div class="columns is-centered">
+        <BR>
+
+          <h3 class="title is-4" align="left">Listening to explanation about the location.</h3>
+          <div class="content has-text-justified">
+            <p>
+              First is the method of assisting in distinguishing the overall location of the dishes when it is served.
+              In order to identify the location of the objects in space, I used a smartphone that has a depth camera-equipped (e.g., iPhone X) and perform 3D object detection to check the positions of the dish in 3-dimensional space.
+              When the dishes' location is identified, I provide information in the most preferred way by the PVI, which is providing the dishes' directions in relation to the clock vocally.
+              Also, if the PVI wishes to know the location of a particular dish during a meal, I use speech as the input modality and provide dishes' direction through vocal assistance.
+            </p>
+          </div>
+            <div class="column">
+              <div class="content">
+                  <img src="./static/images/setting.png" alt="setting">
+              </div>
+            </div>
+            <div class="content has-text-justified">
+              <p>
+                <b><u>3D object tracking</u></b>
+                <BR> For the first prototype,
+              </p>
+              <p>
+                <b><u>Speech modality</u></b>
+                <BR> To get the voice command from the users and provide the output to the users, we used <a href="https://www.ibm.com/watson">IBM’s Watson</a> to receive users’ voice input through the mobile phone and convert it to text.
+                We also used a text-to-speech module to provide requested information verbally to the users.
+              </p>
+            </div>
+
+            <h3 class="title is-4" align="left">Leading the hands towards the dishes.</h3>
+            <div class="content has-text-justified">
+              <p>
+                Instead of directing the PVI hand to locate the dishes from others, we can enable them to figure out the accurate dishes' location without any help from others by having themselves touch the dishes.
+                At this point, incorporating augmented reality technology, virtual objects are displayed on each dish that is detected.
+                Also, by performing real-time hand tracking, hand can also be detected in 3D space.
+                With interactions between virtual objects of hands and dishes, the overall location of the dishes can be distinguished.
+                If the PVI wish to approach a specific dish during a meal, we can provide audio feedback based on the spatial distance between the hand and the dishes so that the user can do way-finding and guide the hand to the location of the specific dish.
+                <!-- With the method presented above, PVI can locate dishes without any help from others and satisfy their desire for independent eating., and we look forward to eliminating the trouble of PVI having to try all the dishes when the help from others are unavailable. -->
+              </p>
+            </div>
+              <div class="column">
+                <div class="content">
+                    <img src="./static/images/setting.png" alt="setting">
+                </div>
+              </div>
+              <div class="content has-text-justified">
+                <p>
+                  <b><u>3D hand tracking</u></b>
+                  <BR> For the first prototype,
+                </p>
+                <p>
+                  <b><u>Calculating distance and providing Feedback</u></b>
+                  <BR> I applied an audio feedback emitting beeping sound inversely proportional to distance to guide users’ hand to food, and haptic feedback to confirm that users have reached the desired dishes.
+                </p>
+              </div>
 
           <div class="column">
             <div class="content">
